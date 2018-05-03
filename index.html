@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Datos de alumno </title>
+
+<!--grupo CSS -->
+ <link rel="stylesheet" href="css/temaapp2.min.css" />
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+ 
+ <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <!-- <script src="js/acciones.js"></script> -->
+  <script src="phonegap.js"></script>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+</head>
+ 
+ <body onLoad="MM_preloadImages('imagenes/peque.jpg')">
+ 
+  <div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1> Yareli Zarate Luna  </h1>
+  </div>
+  <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>17 UHHHHHHH!!!!</h1>
+    <div>
+    <p>Esta es su primera foto con 17 y una de bebe</p>
+    <br>
+    </div>
+    <div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/peque.jpg',1)"><img src="imagenes/17.jpg" width="854" height="854" id="Image9"></a> </div>
+     </div>
+   </div>
+   <div>
+   <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+   <li class="ui-first-child ui-last-child">
+     <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">        
+       <h2>Datos generales</h2>
+          <p>Se muestra el nombre y uno que otra cosa</p>
+          </a>
+          </li>
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>Fecha de Nacimiento</h2>
+          <p>Se muestra el dia, mes y año de nacimiento</p>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+        <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>Recuerdos :,3</h2>
+          <p>Muestra uno que oro recuerdo aunque no lo leera :,3 </p>
+          </a>
+         </li>
+         <li class="ui-first-child ui-last-child">
+        <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>Cancionnn(Perdon por las faltas de acento, esta cosa no me deja)</h2>
+          <p>Muestra una pequeña cancion xd </p>
+          </a>
+         </li>
+         <li class="ui-first-child ui-last-child">
+          <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>OTROS GUSTOS E INTERESES</h2>
+           <p>Muestra otros gustos del alumno</p>
+        </a>
+        </li>
+        </ul>
+        </div>
+        <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+        <div>
+         <img src="res/android/mdpi.png" width="46" height="46">
+         </div>
+         <div>
+           <h4>Azucar</h4>
+           <h4>Yareli </h4>
+          </div>
+          </div>
+          </div>
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1>NOMBRE</h1>
+        </div>
+        <div data-role="content" align="center">
+         <div>
+          <h2>Yareli Zarate luna (ya lo sabes daahhh)</h2>
+          <img src="imagenes/16.jpg" width="50%" height="50%">
+          </div>
+         </div>
+         <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+         <div>
+          <img src="res/android/mdpi.png" width="46" height="46">
+          </div>
+           <h4>Azuquitar</h4>
+          </div>
+         </div>
+         
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+          <h1>FECHA DE NACIMIENTO</h1>
+          </div>
+          <div data-role="content" align="center">
+           <div>
+            <h2>30/ABRIL/2001</h2></div>
+            </div>
+           <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+           <div>
+            <img src="res/android/mdpi.png" width="46" height="46">
+            </div>
+             <h4>Azuquitar</h4>
+            </div>
+            </div>
+            
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a" >
+            <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+            <h1>Recuerdossss</h1>
+            </div>
+            <div data-role="content" align="center">
+             <div>
+              <p>Uno de los recuerdos que tengo es cuando pusimos nuestras portadas de yoonmin por que llegue tarde a tu posada</p>
+              <img src="imagenes/31870387_2184109798475499_2576215826176671744_n.jpg" width="50%" height="50%">              
+               <p>Tambien recuerdo las veces que hablabamos demaciado xD</p>
+               <img src="imagenes/31770196_2184110091808803_8229963646231379968_n.jpg" width="50%" height="50%">               <p>Otro ws cuando compramos unas pulseras iguales por nuestra amistad pero terminer perdiendola....aunque apenas te enteres xD</p>
+               <img src="imagenes/31793458_2184110071808805_7774667924257636352_n.jpg"width="50%" height="50%">
+              </div>
+              </div>
+              <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+              <div>
+              <img src="res/android/mdpi.png" width="46" height="46">
+              </div>
+               <h4>Azuquitar</h4>
+              </div>
+              </div>
+              
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+                <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                <h1>cancion</h1>
+               </div>
+               <div data-role="content" align="center">
+                <div>
+                 <p>Amigo sabes acabo de conocer, una mujer que aun es una niña 
+sabes tiene los 17 aun, es jovencita y ya es mi novia. (x2) 
+
+amo su inocencia, 17 años 
+amo su errores, 17 años 
+soy su primer novio, 17 años 
+su primer amor (x2) 
+
+es callada, timida, inocente y tiene la mirada, 
+le tomo la mano y siente algo extraño 
+la abrazo, me abraza y empieza a temblar 
+a temblar de miedo diciendome que nunca 
+habia sentido sensacion asi, en su vida 
+asi en su vida. 
+ (perdon lo tenia que hacer xD)</p>
+                 <img src="imagenes/bts.jpg" width="50%" height="50%">
+                </div>
+               </div>
+               <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+               <div>
+                <img src="res/android/mdpi.png" width="46" height="46">
+               </div>
+                <h4>Azuquitar</h4>
+               </div>
+               </div>
+               
+               <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                <h1>GUSTOS E INTERESES (pequeña descripcion</h1>
+                </div>
+ <div data-role="content" align="center">
+                 <div>
+                 <h2> TE JAMON CON HEVITOOOOOO</h2>
+                  <p>Le gustan los xinos, leer y es la persona mas buena que hay, ademas de que es la mejor amiga que puedes tener y cumplio 17 años :,v ya esta creciendo.</p>
+                   <img src="imagenes/yonmin.jpg" width="50%" height="50%">
+                  </div>
+                 <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+                 <div>
+                 <img src="res/android/mdpi.png" width="46" height="46">
+               </div>
+                 <h4>Azuquitar</h4>
+                 </div>
+              </div>
+</body>
+</html>
